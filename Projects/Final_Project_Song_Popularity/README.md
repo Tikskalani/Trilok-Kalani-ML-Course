@@ -24,7 +24,7 @@ After deduplicating on `track_id` (the same song appears multiple times because 
 
 ## What I built
 
-The pitch deck `FinalPresentation_Trilok_ITAI1371.pptx` walks through the full project visually. The topic-selection PDF `Final_Project_Topic_Selection.pdf` has the literature review and project framing.
+The full code is in `spotify_notebook.ipynb`. The pitch deck `FinalPresentation_Trilok_ITAI1371.pptx` walks through the project visually. The topic-selection PDF `Final_Project_Topic_Selection.pdf` has the literature review and project framing, and the written analysis is in `Spotify_Project_Report.docx`.
 
 **Two feature sets** — to actually measure how much genre matters on top of audio:
 - Set A: audio only (14 features)
@@ -78,9 +78,19 @@ A few real ones I ran into:
 
 ## Files
 
+- `spotify_notebook.ipynb` — full project notebook (EDA, feature engineering, all models, evaluation, K-Means)
+- `dataset.csv` — the cleaned Spotify Tracks dataset used by the notebook
+- `Spotify_Project_Report.docx` — written project report
 - `FinalPresentation_Trilok_ITAI1371.pptx` — final pitch presentation (10 slides)
 - `Final_Project_Topic_Selection.pdf` — topic selection write-up with the literature review
+- `Spotify_Supplementary.pdf` — supplementary diagrams and notes
+- `Spotify_AI_Disclosure.docx` — required disclosure of AI tool use during this project
+- Plots:
+  - `plot_01_popularity_dist.png` — popularity score distribution
+  - `plot_02_correlation_heatmap.png` — feature correlation heatmap
+  - `plot_03_tier_distribution.png` — Low / Medium / High tier distribution
+  - `plot_04_regression_comparison.png` — regression model comparison
 
-## Honest disclosure
+## AI tools disclosure
 
-I used AI tools as a study aid during this project — checking sklearn syntax, debugging plot code, and reviewing my writing for clarity. All modeling decisions, the experimental design (Set A vs. Set B), the deduplication choice, and the interpretation of results are my own.
+Full disclosure is in `Spotify_AI_Disclosure.docx`. Short version: I used AI tools as a study aid during this project — checking sklearn syntax, debugging plot code, and reviewing my writing for clarity. All modeling decisions, the experimental design (Set A vs. Set B), the deduplication choice, and the interpretation of results are my own.
